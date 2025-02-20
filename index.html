@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: "Teko", sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;  
+            margin: 0;  
+            padding: 0;
+            align-items: center;
+           /* background:linear-gradient(to right,
+            red 0%,
+            red 50%,
+            yellow 50%,
+            yellow 100%); */
+            background-image: url(./image/1310800\ \(1\).png);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+
+        }
+        nav{
+            backdrop-filter: blur(10px);
+            margin-top: 10px;
+            width: 100%;
+            border-radius: 30px;
+        }
+        .nav-bar>ul{
+            margin: 0;
+            padding: 10p;
+            margin-left: 30px;
+            list-style: none;
+            gap: 7rem;
+            display: flex;
+            font-size: 40px;
+            font-weight: bl;
+        }
+        nav>ul>#log{
+            color: aliceblue !important;
+            margin-left: auto;
+            margin-right: 30px;
+        }
+
+        .form{
+            border: 2px solid black;
+            margin-top: 60px;
+            display:  grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 500px ;
+            max-width: 800px;
+            gap: 19px;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .f1{
+            background-color: transparent;
+            display: flex;
+            height: 100%;
+            font-size: 30px;
+            flex-direction: column;
+            gap: 24px;
+            justify-content: center;
+            align-items: center;
+            grid-area: 1/2;
+            backdrop-filter: blur(40px);
+            color: rgb(255, 255, 255);
+            
+        }
+        .f1>h2{
+            margin: 0;
+            padding: 0;
+        }
+        .img{
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            margin:0;
+            padding: 0;
+            height: 100%;
+        }
+        label{
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+
+        }
+        input{
+            margin: 0;
+            padding: 5px;
+            height: 30px;
+            width:300px;
+            border-radius: 20px;
+            font-size: large;
+            background: transparent;
+            color: aliceblue;
+
+        }
+        
+        .btn>*{
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            height: 40px;
+            width: 110px;
+            border-radius: 30px;
+            font-size: 15px;
+            background: transparent;
+            font-weight: bold;
+            color: aliceblue;
+            margin: 5px;
+        }
+        .log-link{
+            font-size: 20px;
+            margin: 0;
+            padding:0;
+        }
+        .nav-bar>ul>li:hover{
+            color: aliceblue;
+            transition: 0.6s;
+        }
+        a{
+            color: aliceblue;
+        }
+        @media(max-width:600px){
+            .nav-bar{
+                display: none;
+            }
+            .form>.img{
+                display: none;
+
+            }
+            .form{
+                grid-template-columns: 1fr;
+                width: 90%;
+                min-width: 400px;
+                
+            }
+            .f1{
+                grid-area: 1/1;
+                width: 100%;
+            }
+        }
+
+        
+        
+
+    </style>
+</head>
+<body>
+    <nav class="nav-bar">
+        
+        <ul>
+            <li>HOME</li>
+            <li>Contact</li>
+            <li>Work</li>
+            <li id="log">Login</li>
+        </ul>
+    </nav>
+    <div class="form">
+     <div class="f1">
+        <h2>Sign-Up </h2>
+       <label for="Email">Email</label>
+       <input type="email" placeholder="Enter mail" name="email">
+       <label for="password"> Password</label>
+       <input type="password" placeholder="Enter password" name="password">
+      <div class="btn">
+        <button type="submit">Submit</button>
+        <button type="reset" name="reset"> Reset</button>
+      </div> 
+      <p class="log-link">already have an account? : <a href="#">Login</a></p>
+     </div>
+     <div class="img"><img src="./image/Red_Dead_Redemption_II.jpg"/></div>
+    </div>
+    
+</body>
+</html>

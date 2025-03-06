@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: "Teko", sans-serif;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+        nav{
+            background-color: red;
+            display: flex;
+            width: 100%;
+            margin-top: 10px;
+            border-radius: 20px;
+            height: 60px;
+            
+        }
+        nav>ul{
+            padding: 4px;
+            padding-left: 60px;
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+            list-style: none;
+            width: 100%;  
+        }
+        nav>ul>li{
+            font-size: 35px;
+        }
+        .sign-up{
+            margin-left: auto;
+            margin-right: 40px;
+            color: aliceblue;
+        }
+        .login-form>form{
+            display: flex;
+            flex-direction: column;   
+            justify-content: center; 
+            align-items: center;
+            color: aliceblue;
+            margin-right: 17px;
+            gap: 20px;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .login-form{
+            overflow: hidden;
+            background-color: rgb(223, 30, 30);
+            display: grid;
+            grid-template-columns: 376px 1fr ;
+            grid-template-rows:500px;
+            width:700px;
+            margin-top: 50px;
+            border-radius: 20px;
+            
+            
+        }
+        .login-form>div>img{
+            height: 100%;
+
+
+        }
+        .image{
+            grid-area:1/1
+        }
+        input{
+            height: 40px;
+            width: 300px;
+            border-radius:20px ;
+            text-align: center;
+            font-size: 17px;
+        }
+        h2{
+            margin: 0;
+            margin-bottom: 20px;
+            font-size: 50px;
+        }
+        .login{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            width: 100px;
+            font-size: 17px;
+            font-weight: bold;
+            border-radius: 20px;
+            margin-top: 20px;
+        
+
+        }
+
+            
+    </style>
+</head>
+<body>
+        <nav>
+           <ul>
+            <li>Home</li>
+            <li>Contact</li>
+            <li class="sign-up">sign-up</li>
+           </ul>
+        </nav>
+        <div class="login-form">  
+           <form>
+            <h2>login</h2>
+            <label for="mail" name="e-mail" type="email">Mail</label>
+            <input type="main" placeholder="Enter-mail">
+            <label for="password" name="password"> password</label>
+            <input type="password" name="password" placeholder="Enter password">
+            <div>
+                <button type="submit" name="log-button" class="login"> Login</button>
+            </div>
+           </form>
+           <div class="image"><img src="./image/Arthur_Morgan.webp"></div>
+       </div>
+
+      
+
+</body>
+</html>

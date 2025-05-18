@@ -1,2 +1,3 @@
 # sign-up page-themes
-One of the projects i'm creating while learning.
+1 - One of the projects i'm creating while learning.
+2- its a simple template that you can use and modify according to you.
